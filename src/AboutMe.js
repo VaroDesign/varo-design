@@ -3,13 +3,13 @@ import Navbar from './components/Navbar/Navbar';
 import './Styles/style.scss';
 
 
-function App() {
+function AboutMe() {
   return (
     <div className="App">
         <Navbar />
-        <h1>lalala</h1>
+        <h1>About Me</h1>
     </div>
   );
 }
 
-export default App;
+export default AboutMe;
