@@ -1,22 +1,22 @@
 export const MenuItemsLeft = [
     {
         title: 'About me',
-        url: './',
+        url: '/about-me',
         cName: 'nav-links'
     },
     {
         title: 'Skills',
-        url: '#',
+        url: '/#skills',
         cName: 'nav-links'
     },
     {
         title: 'Experience',
-        url: '#',
+        url: '/experience',
         cName: 'nav-links'
     },
     {
         title: 'Education',
-        url: '#',
+        url: '/education',
         cName: 'nav-links'
     }
 ]
@@ -24,22 +24,22 @@ export const MenuItemsLeft = [
 export const MenuItemsRight = [
     {
         title: 'Porfolio',
-        url: '#',
+        url: '/portfolio',
         cName: 'nav-links'
     },
     {
         title: 'Blog',
-        url: '#',
+        url: '/blog',
         cName: 'nav-links'
     },
     {
         title: 'Resume',
-        url: '#',
+        url: 'resume',
         cName: 'nav-links'
     },
     {
         title: 'Contact',
-        url: '#',
+        url: 'contact',
         cName: 'nav-links'
     }
 ]

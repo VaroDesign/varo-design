@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { MenuItemsRight } from "./MenuItems";
+import { Link } from 'react-router-dom';
 
 class NavRight extends Component {
     render() {
         return (
             <div className="nav-items-right">
                     <ul className="nav-menu">
+                      {/* Here will comes Li element for side drawer */}
                         {MenuItemsRight.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a className={item.cName} href={item.url}>
-                                    {item.title}
-                                    </a>
+                                    <Link to={item.url} className={item.cName}>
+                                        {item.title}
+                                    </Link>
                                 </li>
                             )
                         })}

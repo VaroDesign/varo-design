@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavLeft from './NavLeft';
 import NavRight from './NavRight';
 import { MenuItemsMobile } from "./MenuItems";
+import { VaroLogo } from '../ui/logos';
 
 class Navbar extends Component {
     
@@ -30,9 +31,9 @@ class Navbar extends Component {
                 })}
             </ul>
                 <NavLeft />
-                <div className="logo">
-                    <img src={process.env.PUBLIC_URL + '/img/VaroDesignLogo.png'} alt="VaroDesign Logo"/>
-                </div>
+                <VaroLogo 
+                    linkTo="/"
+                />
                 <NavRight />
             </nav>
         )
