@@ -16,6 +16,7 @@ class Navbar extends Component {
     render(){
         return(
             <nav className="NavbarItems">
+                <div className="nav-panel">
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>     
                 </div>
@@ -35,6 +36,7 @@ class Navbar extends Component {
                     linkTo="/"
                 />
                 <NavRight />
+                </div>
             </nav>
         )
     }
