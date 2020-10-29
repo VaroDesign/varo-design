@@ -4,8 +4,14 @@ import NavRight from './NavRight';
 import { MenuItemsMobile } from "./MenuItems";
 import { VaroLogo } from '../ui/logos';
 
+import Sticky from 'react-sticky-state';
+
+const scrollClass = {
+    down: 'sticky-scroll-down',
+    up: 'sticky-scroll-up'
+  }
+
 class Navbar extends Component {
-    
     state = {
         clicked: false,
     }
@@ -15,7 +21,8 @@ class Navbar extends Component {
     } 
     render(){
         return(
-            <nav className="NavbarItems">
+            <Sticky scrollClass={scrollClass}>
+            <nav className="NavbarItems sticky top">
                 <div className="nav-panel">
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>     
@@ -38,6 +45,7 @@ class Navbar extends Component {
                 <NavRight />
                 </div>
             </nav>
+            </Sticky>
         )
     }
 }

@@ -1,7 +1,7 @@
 .video {
-    height: 100%;
+    position: absolute;
     width: 100%;
-    z-index: auto;
+    z-index: -100;
 }
 
 .hero-banner {  
