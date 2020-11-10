@@ -1,16 +1,13 @@
-import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import { Switch, Route } from 'react-router-dom';
-
-import HeroBanner from '../components/HeroBanner';
+import React, { useState } from 'react';
+import Aside from '../components/Sidebar/';
+import MobileNav from '../components/Sidebar/mobile';
 
 const Layout = (props) => {
-    return (  
-        <div>
-            <Switch>
-                <Route exact component={HeroBanner} path="/"/>
-            </Switch>
-        <Navbar/> 
+
+    return (
+      <div className="app">
+        <MobileNav/>
+        <Aside/>
         {props.children}
         </div>
     )

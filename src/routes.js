@@ -1,17 +1,17 @@
 import React from 'react';
 import Layout from './Hoc/Layout';
 import { Switch, Route } from 'react-router-dom';
-
+import { FaBars } from 'react-icons/fa';
 import Home from './components/Home'
 import Contact from './components/Contact';
 
 
-const Routes = (props) => {
+const Routes = () => {
   return (
     <Layout>
       <Switch>
         <Route exact component={Home} path="/"/>
-        <Route exact component={Contact} path="/contact"/>
+        <Route component={Contact} path="/contact"/>
       </Switch>
     </Layout>
   );
